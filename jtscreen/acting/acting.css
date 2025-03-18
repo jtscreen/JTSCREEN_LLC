@@ -1,0 +1,504 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #293241;
+    font-family: montserrat;
+}
+h2{font-weight: 550;}
+
+/*font*/
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Navigation*/
+#nav {
+    height: 130px;
+    width: 100vw;
+    background-color: #e0fbfc;
+    margin-top: 15px;
+    border-bottom: 1px solid #293241;
+    z-index: 5;
+}
+#nav img{
+    position: absolute;
+    max-width: 180px; 
+    max-width: 180px; 
+    margin-left: 20px;
+}
+#nav a{
+    text-decoration: none;
+    color: #293241;
+    font-size: 30px;
+    transition: all;
+}
+#nav a:hover{
+    transition: 500ms;
+    cursor: pointer;
+    color: #ee6c4d;
+}
+#drop a:hover{
+    transition: 500ms;
+    color: #293241;
+}
+.nav-links{
+    position: relative;
+    display: flex;
+    width: 50%;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    margin-left: 50%;
+    padding-top: 50px;
+}
+.nav-links a{
+    padding: 0 40px
+}
+
+/*Dropdown Portfolio*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.menu{
+    transition: all;
+}
+#drop {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-top: 46.5px;
+    z-index: 1;
+}
+#drop a {
+    background-color: #ee6c4d;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    transition: all;
+    margin-left: 35px;
+    margin-right: -40px;
+    padding: 10px 10px 10px 5px;
+}
+#drop a:hover{
+    transition: 500ms;
+}
+
+/*Hamburger menu*/
+#hamburger{
+    display: none;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+}
+#hamburger-links{
+    display: none;
+}
+
+/*Home*/
+#home{
+    min-height: 90vh;
+    padding-bottom: 5vh;
+    height: fit-content;
+    width: 100vw;
+    background-color: white;
+}
+.heading{
+    padding: 5vh 2vw 0 15vw;
+}
+#left-column{
+    width: 24vw;
+    height: 75vh;
+    padding: 1vh 7vw 0 15vw;
+    margin: 0;
+    text-align: auto;
+    float: left;
+}
+#headshot{
+    position: relative;
+    width: 30vw;
+}
+.back-headshot, .front-headshot{
+    position: absolute;
+    top: 0;
+    left: 3vw;
+}
+.front-headshot{
+    z-index: 1;
+}
+#home h1, #home h2{
+    margin: 0;
+    text-align: left;
+}
+#home h1{color: #293241;}
+#home h2{color: #ee6c4d;}
+#home img{
+    max-height: 50vh;
+    max-width: 25vw;
+    padding-top: 3vh;
+}
+.download{
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 55vh;
+    font-size: 1.3em;
+}
+.download a{
+    padding: 1vh 0;
+    color: #ee6c4d;
+    text-decoration: none;
+    transition: all;
+}
+.download a:hover{
+    transition: 500ms;
+    color:#293241;
+}
+#right-column{
+    margin: 0;
+    padding: 1vh 10vw 0 46vw;
+    text-align: left;
+    font-size: 1.35em;
+}
+
+/*Acting Reel*/
+#reel{
+    height: fit-content;
+    width: 100vw;
+    padding-bottom: 5vh;
+    background-color: #e0fbfc;
+}
+.intro{
+    padding-top: 5vh;
+}
+.intro h1, .intro h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.intro h1{color:#293241;}
+.intro h2{color: #ee6c4d;}
+.contact{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 65vh;
+}
+.contact img{
+    max-width: 60vw;
+    height: auto;
+}
+
+.reel{
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 20vw;
+}
+iframe{
+    position: relative;
+    height: 60vh;
+    width: 60vw;
+    z-index: 1;
+}
+
+/*Image Gallery*/
+#gallery{
+    height: fit-content;
+    width: 100vw;
+    padding-bottom: 5vh;
+    background-color: #3d5a80;
+}
+#picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;    
+}
+.theater, .film, .other{
+    width: 30vw;
+    height: 45vh;
+    margin: 0 2vw;
+    color: #e0fbfc;
+    text-shadow: 1px 1px 2px black;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+}
+.theater {
+    background-image: url("tgallery/tos2.jpg");
+    background-size: cover;
+    transition: all;
+}
+.film {
+    background-image: url("fgallery/yarn2.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: all;
+}
+.other {
+    background-image: url("pGallery/pw3.JPG");
+    background-size: cover;
+    transition: all;
+}
+.theater :hover, .film :hover, .other :hover{
+    cursor: pointer;
+    transition: 500ms;
+    backdrop-filter: blur(2px);
+}
+.theater p, .film p, .other p{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gallery h1, #gallery h2{
+    color: #ee6c4d;
+    padding-top: 3vh;
+    text-align: center;
+}
+#gallery h2{
+    margin-top: 5vh;
+    padding: 0 5vw;
+}
+#gallery h3{
+    color: white;
+    text-align: center;
+}
+
+/*Overlay*/
+#hidden-theater, #hidden-film, #hidden-other{
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    justify-content: center; 
+    align-items: center;
+    z-index: 10;
+}
+#hidden-theater img, #hidden-film img, #hidden-other img{
+    max-width: 80%;
+    max-height: 80%;
+}
+span{
+    color: #e0fbfc;
+}
+#close-theater, #close-film, #close-other{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #ee6c4d;
+    cursor: pointer;
+}
+#count-theater, #count-film, #count-other{
+    position: absolute;
+    bottom: 30px;
+    font-size: 25px;
+    color: #ee6c4d;
+    cursor: default;
+}
+.arrow{
+    position: absolute;
+    color: #ee6c4d;
+    font-size: 25px;
+    padding: 35vh 10vw;
+    cursor: pointer;
+}
+#prev-theater, #prev-film, #prev-other{
+    left: -5vw;
+}
+#next-theater, #next-film, #next-other{
+    right: -5vw;
+}
+
+/*Extra Links*/
+.extra-links{
+    text-align: center;
+}
+.imdb{
+    height: 50px;
+    width: 50px;
+    margin: 0 3%;
+}
+.bway{
+    height: 50px;
+    width: 80px;
+    margin: 0 3%;
+}
+
+/*Footer*/
+footer{
+    height: fit-content;
+    width: 100vw;
+    background-color: #293241;
+    color: white;
+}
+.contactInfo{
+    text-align: center;
+}
+#credit{
+    display: flex;
+    flex-direction: row;
+    padding: 0 25px;
+}
+.credit{
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+}
+.contactImg{
+    height: 50px;
+    width: 50px;
+    margin: 0 3%;
+}
+
+@media screen and (max-width: 1000px) {
+    /*Home*/
+    #home{
+        display: flex;
+        flex-direction: column;
+    }
+    .column{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .heading{
+        padding: 5vh 0 0 0;
+    }
+    #home h1, #home h2{
+        text-align: center;
+    }
+    
+    #left-column{
+        width: 100vw;
+        padding: 3vh 0 0 0;
+        height: fit-content;
+    }
+    .download{
+        padding: 0;
+        max-width: 100vw;
+    }
+    
+    #headshot{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .front-headshot, .back-headshot{
+        left: -100vw;
+    }
+
+    #right-column{
+        padding: 0 5vh;
+    }
+
+    /*Reel*/
+    iframe{
+        max-height: 50vh;
+    }
+    .contact img{
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /*logo*/
+    #nav img{
+        margin: 0;
+        margin: 0 50vw 0;
+        transform: translateX(-50%);
+    }
+
+    /*hamburger*/
+    #hamburger{
+        height: auto;       
+        width: auto; 
+        cursor: pointer;
+        display: block; 
+        margin-top: 3vh;
+    }
+    .burger-symbol{
+        font-family: "Roboto";
+        font-size: 1.6em;
+        color: #293241;
+    }
+    #nav-links{
+        display: none;
+        font-size: 30px;
+    }
+    #hamburger-links a, #hamburger-links span{
+        color: white;
+        text-align: center;
+        padding: 1vh 0;
+    }
+    #hamburger-links span{
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 40px;
+        margin-right: 30px;
+    }
+    #hamburger-links{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0);
+    }
+    #hamburger :hover{
+        cursor: pointer;
+    }
+    #hamburger-links:hover{
+        cursor: default;
+    }
+
+    /*Reel*/
+    .intro{
+        padding: 5vh 5vw 0;
+    }
+
+    /*Gallery*/
+    #picture{
+        padding-top: 5vh;
+        flex-direction: column;
+    }
+    .theater, .film, .other{
+        width: 70vw;
+        max-height: 30vh;
+        margin-bottom: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    /*Footer*/
+    #credit{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    #credit p{
+        width: 100vw;
+    }
+    .credit{
+        position: relative;
+        width: 100vw;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jtscreen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.ico">
+    <link rel="stylesheet" href="acting.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <nav>
+            <img src="../../img/logo/logo.png">
+            <div class="hamburger" id="hamburger"> 
+                <span class="burger-symbol">≡</span> 
+                <div id="hamburger-links">
+                    <span>X</span>
+                    <a href="../home.html">Home</a>
+                    <a href="../photo/photo.html">Photography</a>
+                    <a href="../contact/contact.html">Contact</a>
+                </div>
+            </div>
+            <div id="nav-links" class="nav-links">
+                <a href="../home.html">Home</a>
+                <div class="dropdown">
+                    <a id="menu">Portfolio</a>
+                    <div id="drop">
+                        <a href="../acting/acting.html">Acting</a>
+                        <a href="../photo/photo.html">Photography</a>
+                    </div>
+                </div>
+                <a href="../contact/contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+    <div id="home">
+        <div class="heading">
+            <h1> Joshua Screen</h1>
+            <h2>Actor | Performer | Creator</h2>
+        </div>
+        <div class="column">
+            <div id="left-column">
+                <div id="headshot">
+                    <img class="front-headshot" src="../../img/home/headshot1.JPG">
+                    <img class="back-headshot" src="../../img/home/headshot2.JPG">
+                    <div class="download">
+                        <a href="../../img/docs/headshot.pdf" target="_blank">View Headshot</a>
+                        <a href="../../img/docs/resume.pdf" target="_blank">View Resume</a>
+                    </div>
+                </div>
+            </div>
+            <div id="right-column">
+                <p>Joshua Screen is a New York-based performer with nearly a decade of experience across film, theater, and a variety of performance arts, including music and dance.</p>
+                <p>With a strong background in both comedic and dramatic roles, he has become known for his dynamic range and versatility on stage and screen. From high-energy performances to nuanced portrayals, he is committed to creating authentic, memorable characters.</p>
+                <p>Having studied at Fordham University under the guidance of esteemed industry professionals, including Destiny Lily, Dawn Akemi Saito, Andrea Haring, and many others, Joshua has developed a strong foundation in the art of performance. Through their training, he has come to value the significance of collaboration, the discipline of technique, and, above all, the joy and passion that comes with pursuing the craft.</p>
+            </div>
+        </div>
+    </div>
+    <div id="reel">
+        <div class="intro">
+            <h1>Performance Reel</h1>
+            <h2>click the top right of the video to view playlist of material</h2>
+        </div>
+        <div class="reel">
+            <iframe src="https://www.youtube.com/embed/videoseries?si=jFQjfG0HIXfejEy2&amp;list=PLEtB1iosCuiwwJ75pH5wzKcZlNl6psrQH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="contact">
+            <a href="https://www.forteartistmgmt.com/home" target="_blank"><img src="../../img/logo/managment_info.png"></a>
+        </div>
+    </div>
+    <div id="gallery">
+        <div class="intro">
+            <h1>Gallery</h1>
+        </div>
+        <div id="picture">
+            <div class="theater">
+                <p>Theater Gallery</p>
+            </div>
+            <div id="hidden-theater" hidden>
+                <span id="prev-theater" class="arrow">&lt;</span>
+                <img id="overlayTheaterImage" class="overlay-image">
+                <span id="next-theater" class="arrow">&gt;</span>
+                <span id="close-theater">&times;</span>
+                <span id="count-theater"></span>
+            </div>
+            <div class="film">
+                <p>Film Gallery</p>
+            </div>
+            <div id="hidden-film" hidden>
+                <span id="prev-film" class="arrow" onclick="prevProduction()">&lt;</span>
+                <img id="overlayFilmImage" class="overlay-image">
+                <span id="next-film" class="arrow" onclick="nextProduction()">&gt;</span>
+                <span id="close-film">&times;</span>
+                <span id="count-film"></span>
+            </div>
+            <div class="other">
+                <p>Performance Gallery</p>
+            </div>
+            <div id="hidden-other" hidden>
+                <span id="prev-other" class="arrow" onclick="prevProduction()">&lt;</span>
+                <img id="overlayOtherImage" class="overlay-image">
+                <span id="next-other" class="arrow" onclick="nextProduction()">&gt;</span>
+                <span id="close-other">&times;</span>
+                <span id="count-other"></span>
+            </div>
+        </div>
+        <div class="closing">
+            <h2>Explore photos of some of the productions that Joshua has been in organized by medium</h2>
+            <h3>Check out these extra links</h3>
+            <div class="extra-links">
+                <a href="https://www.imdb.com/name/nm13843778/" target="_blank"><img class="imdb" src="../../img/logo/IMDb.png"></a>
+                <a href="https://www.broadwayworld.com/search/?q=Joshua+Screen&cx=003281041504712504013%3Ama8kxnaa1hu&cof=FORID%3A11&ie=UTF-8&search_type%5B%5D=site" target="_blank"><img class="bway" src="../../img/logo/bwaywrld.png"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contactInfo">
+            <h2>Contact Me</h2>
+            <div class="logo">
+                <a href="https://www.instagram.com/jtscreen/" target="_blank"><img src="../../img/logo/insta.png" alt="instagram @jtscreen" class="contactImg"></a>
+                <a href="mailto: jtscreen23@gmail.com" alt="email jtscreen23@gmail.com"><img src="../../img/logo/mail.png" class="contactImg"></a>
+                <a href="https://www.linkedin.com/in/joshua-screen-b86791283" target="_blank" ><img src="../../img/logo/linkedin.png" alt="linkedin" class="contactImg"></a>
+            </div>
+        </div>
+        <div id="credit">
+            <p>&copy; 2024 Joshua Screen. All rights reserved.</p>
+            <p class="credit">Designed by Joshua Screen</p>
+        </div>
+    </footer>
+    <script src="acting.js"></script>
+</body>
+</html>
