@@ -38,7 +38,7 @@ const theater = [
   "tgallery/maine1.JPG",
   "tgallery/msbap1.JPEG",
   "tgallery/msbap2.JPEG",
-  "tgallery/koda1.JPEG",
+  "tgallery/koda.JPEG",
   "tgallery/koda2.JPEG",
   "tgallery/koda3.JPEG",
   "tgallery/koda4.JPEG",
