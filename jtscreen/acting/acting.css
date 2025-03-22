@@ -156,6 +156,7 @@ h2{font-weight: 550;}
     color: #ee6c4d;
     text-decoration: none;
     transition: all;
+    text-align: center;
 }
 .download a:hover{
     transition: 500ms;
@@ -487,6 +488,8 @@ footer{
         padding-bottom: 5vh;
     }
 
+    .closing h2{font-weight: 400;}
+    .closing h3 {font-weight: 450;}
     /*Footer*/
     #credit{
         flex-direction: column;
