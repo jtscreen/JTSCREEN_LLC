@@ -305,7 +305,7 @@ $("#hidden-next-event").click(function(){
 })
 
 //Overlay Functions
-$('#headshot a').click(function(){
+$('#current-headshot').click(function(){
   const overlay = document.getElementById('hidden-headshot');
   let img = document.getElementById('overlayHeadshotImage');
   img.src = headshot[h];
@@ -314,7 +314,7 @@ $('#headshot a').click(function(){
   overlay.removeAttribute("hidden");
 });
 
-$('#production a').click(function(){
+$('#current-production').click(function(){
   const overlay = document.getElementById('hidden-production');
   let img = document.getElementById('overlayProductionImage');
   img.src = production[p];
@@ -323,7 +323,7 @@ $('#production a').click(function(){
   overlay.removeAttribute("hidden");
 });
 
-$('#grad a').click(function(){
+$('#current-grad').click(function(){
   const overlay = document.getElementById('hidden-grad');
   let img = document.getElementById('overlayGradImage');
   img.src = grad[g];
@@ -332,7 +332,7 @@ $('#grad a').click(function(){
   overlay.removeAttribute("hidden");
 });
 
-$('#portrait a').click(function(){
+$('#current-portrait').click(function(){
   const overlay = document.getElementById('hidden-portrait');
   let img = document.getElementById('overlayPortraitImage');
   img.src = portrait[r];
@@ -341,7 +341,7 @@ $('#portrait a').click(function(){
   overlay.removeAttribute("hidden");
 });
 
-$('#event a').click(function(){
+$('#current-event').click(function(){
   const overlay = document.getElementById('hidden-event');
   let img = document.getElementById('overlayEventImage');
   img.src = event[e];

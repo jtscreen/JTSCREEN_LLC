@@ -202,24 +202,22 @@ table {
     margin-top: 7vh;
     object-fit: contain;
 }
-.view-gallery{
-    text-align: center;
-    font-size: 1.3rem;
-}
-#production .view-gallery, #event .view-gallery{
-    color: white;
+#current-headshot:hover, #current-production:hover, #current-grad:hover, #current-portrait:hover, #current-event:hover {
+    cursor: pointer;
 }
 
 /*headshot*/
 #headshot{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: #e0fbfc;
 }
 
 /*Production*/
 #production{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: #3d5a80;
 }
@@ -229,7 +227,8 @@ table {
 
 /*Grad*/
 #grad{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: white;
 }
@@ -239,14 +238,16 @@ table {
 
 /*Portrait*/
 #portrait{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: #e0fbfc;
 }
 
 /*Event*/
 #event{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: #3d5a80;
 }
@@ -406,6 +407,22 @@ footer{
     .text p{
         margin-left: 10vw;
     }
+
+    /*Section*/
+    #flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #headshot img, #production img, #grad img, #portrait img, #event img{
+        width: 100vw;
+        max-height: 40vh;
+        height: fit-content;
+    }
+    table{
+        margin: 0 5vw 5vh 5vw;
+        width: 90vw;
+    }
+    /*Home*/
 
     /*Footer*/
     #credit{
