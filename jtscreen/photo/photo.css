@@ -417,6 +417,7 @@ footer{
         width: 100vw;
         max-height: 40vh;
         height: fit-content;
+        margin-top: 5vh;
     }
     table{
         margin: 0 5vw 5vh 5vw;
@@ -437,4 +438,17 @@ footer{
         width: 100vw;
         margin-top: 5px;
     }
+}
+
+@media  screen and (max-width: 500px) {
+    /*Sections*/
+    table{
+        margin: 0 0 5vh 0;
+        width: 100vw;
+    }  
+    th {
+        font-size: .8em;
+        padding: 0 2px;
+        font-weight: 400;
+    }  
 }
