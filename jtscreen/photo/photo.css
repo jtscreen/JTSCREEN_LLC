@@ -408,7 +408,7 @@ footer{
         margin-left: 10vw;
     }
 
-    /*Section*/
+    /*Sections*/
     #flex{
         display: flex;
         flex-direction: column-reverse;
@@ -422,7 +422,6 @@ footer{
         margin: 0 5vw 5vh 5vw;
         width: 90vw;
     }
-    /*Home*/
 
     /*Footer*/
     #credit{
