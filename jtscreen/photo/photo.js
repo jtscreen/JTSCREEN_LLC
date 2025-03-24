@@ -391,3 +391,193 @@ $("#hamburger").click(function () {
     $(".navName").show();
   }
 })
+
+//Swipe Function
+let headshotSwipe = document.getElementById("hidden-headshot");
+let productionSwipe = document.getElementById("hidden-production");
+let gradSwipe = document.getElementById("hidden-grad");
+let portraitSwipe = document.getElementById("hidden-portrait");
+let eventSwipe = document.getElementById("hidden-event");
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+//headshot
+headshotSwipe.addEventListener('touchstart', (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+headshotSwipe.addEventListener('touchmove', (e) => {
+  touchEndX = e.touches[0].clientX;
+});
+headshotSwipe.addEventListener('touchend', () => {
+  const swipeDistance = touchEndX - touchStartX;
+  const threshold = 50; // Minimum distance for a swipe
+
+  if (Math.abs(swipeDistance) > threshold) {
+    if (swipeDistance > 0) { // Swipe right
+      let img = document.getElementById("overlayHeadshotImage");
+      let img2 = document.getElementById("current-headshot");
+      if(h <= 0){} 
+      else{
+        h-=1;
+        img.src = headshot[h];
+        img2.src = headshot[h];
+        $('#count-headshot').text((h+1) + '/' + headshot.length);
+      }
+    } else { // Swipe left
+      let img = document.getElementById("overlayHeadshotImage");
+      let img2 = document.getElementById("current-headshot");
+      if(h >= headshot.length-1){} 
+      else{
+        h+=1;
+        img.src = headshot[h];
+        img2.src = headshot[h];
+        $('#count-headshot').text((h+1) + '/' + headshot.length);
+      } 
+    }
+  }
+});
+
+//production
+productionSwipe.addEventListener('touchstart', (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+productionSwipe.addEventListener('touchmove', (e) => {
+  touchEndX = e.touches[0].clientX;
+});
+productionSwipe.addEventListener('touchend', () => {
+  const swipeDistance = touchEndX - touchStartX;
+  const threshold = 50; // Minimum distance for a swipe
+
+  if (Math.abs(swipeDistance) > threshold) {
+    if (swipeDistance > 0) { // Swipe right
+      let img = document.getElementById("overlayProductionImage");
+      let img2 = document.getElementById("current-production");
+      if(h <= 0){} 
+      else{
+        h-=1;
+        img.src = production[p];
+        img2.src = production[p];
+        $('#count-production').text((p+1) + '/' + production.length);
+      }
+    } else { // Swipe left
+      let img = document.getElementById("overlayProductionImage");
+      let img2 = document.getElementById("current-production");
+      if(p >= production.length-1){} 
+      else{
+        p+=1;
+        img.src = production[p];
+        img2.src = production[p];
+        $('#count-production').text((p+1) + '/' + production.length);
+      } 
+    }
+  }
+});
+
+//Grad
+gradSwipe.addEventListener('touchstart', (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+gradSwipe.addEventListener('touchmove', (e) => {
+  touchEndX = e.touches[0].clientX;
+});
+gradSwipe.addEventListener('touchend', () => {
+  const swipeDistance = touchEndX - touchStartX;
+  const threshold = 50; // Minimum distance for a swipe
+
+  if (Math.abs(swipeDistance) > threshold) {
+    if (swipeDistance > 0) { // Swipe right
+      let img = document.getElementById("overlayGradImage");
+      let img2 = document.getElementById("current-grad");
+      if(g <= 0){} 
+      else{
+        g-=1;
+        img.src = gallery[g];
+        img2.src = gallery[g];
+        $('#count-gallery').text((g+1) + '/' + gallery.length);
+      }
+    } else { // Swipe left
+      let img = document.getElementById("overlayGradImage");
+      let img2 = document.getElementById("current-grad");
+      if(g >= grad.length-1){} 
+      else{
+        g+=1;
+        img.src = grad[g];
+        img2.src = grad[g];
+        $('#count-grad').text((g+1) + '/' + grad.length);
+      } 
+    }
+  }
+});
+
+//portrait
+portraitSwipe.addEventListener('touchstart', (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+portraitSwipe.addEventListener('touchmove', (e) => {
+  touchEndX = e.touches[0].clientX;
+});
+portraitSwipe.addEventListener('touchend', () => {
+  const swipeDistance = touchEndX - touchStartX;
+  const threshold = 50; // Minimum distance for a swipe
+
+  if (Math.abs(swipeDistance) > threshold) {
+    if (swipeDistance > 0) { // Swipe right
+      let img = document.getElementById("overlayPortraitImage");
+      let img2 = document.getElementById("current-portrait");
+      if(r <= 0){} 
+      else{
+        r-=1;
+        img.src = portrait[r];
+        img2.src = portrait[r];
+        $('#count-portrait').text((r+1) + '/' + portrait.length);
+      }
+    } else { // Swipe left
+      let img = document.getElementById("overlayPortraitImage");
+      let img2 = document.getElementById("current-portrait");
+      if(r >= portrait.length-1){} 
+      else{
+        r+=1;
+        img.src = portrait[r];
+        img2.src = portrait[r];
+        $('#count-portrait').text((r+1) + '/' + portrait.length);
+      } 
+    }
+  }
+});
+
+//event
+eventSwipe.addEventListener('touchstart', (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+eventSwipe.addEventListener('touchmove', (e) => {
+  touchEndX = e.touches[0].clientX;
+});
+eventSwipe.addEventListener('touchend', () => {
+  const swipeDistance = touchEndX - touchStartX;
+  const threshold = 50; // Minimum distance for a swipe
+
+  if (Math.abs(swipeDistance) > threshold) {
+    if (swipeDistance > 0) { // Swipe right
+      let img = document.getElementById("overlayEventImage");
+      let img2 = document.getElementById("current-event");
+      if(e <= 0){} 
+      else{
+        e-=1;
+        img.src = event[e];
+        img2.src = event[e];
+        $('#count-headshot').text((e+1) + '/' + event.length);
+      }
+    } else { // Swipe left
+      let img = document.getElementById("overlayEventImage");
+      let img2 = document.getElementById("current-event");
+      if(e >= event.length-1){} 
+      else{
+        e+=1;
+        img.src = event[e];
+        img2.src = event[e];
+        $('#count-event').text((e+1) + '/' + event.length);
+      } 
+    }
+  }
+});
