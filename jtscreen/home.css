@@ -103,9 +103,13 @@ body{
 
 /*Home*/
 #home{
-    height: 90vh;
+    height: fit-content;
+    min-height: 80vh;
     width: 100vw;
     background-color: white;
+    background-image: url("../img/logo/coverPhoto.jpg");
+    background-size: cover;
+    background-repeat: none;
 }
 
 /*Biography*/
@@ -205,7 +209,7 @@ form{
 }
 input{
     width: 30vw;
-    height: 5vh;
+    height: 50px;
 }
 button{
     height: 100%;
@@ -374,6 +378,12 @@ footer{
     }
     #upcoming h1, #upcoming h2{
         text-align: center;
+    }
+    form{
+        width: 100vw;
+    }
+    input{
+        width: 80%;
     }
 
     /*Footer*/
