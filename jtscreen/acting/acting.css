@@ -369,6 +369,7 @@ footer{
     #home{
         display: flex;
         flex-direction: column;
+        padding-bottom: 1vh;
     }
     .column{
         display: flex;

@@ -210,9 +210,15 @@ form{
 input{
     width: 30vw;
     height: 50px;
+    border-radius: 0;
+    background: white;
+    color: black;
 }
 button{
     height: 100%;
+    border-radius: 0;
+    background-color: #ee6c4d;
+    color:#e0fbfc;
 }
 
 /*footer*/
