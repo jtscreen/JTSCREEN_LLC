@@ -25,9 +25,9 @@ $("#hamburger").click(function () {
 
 //Arrays
 const headshotArray = [
-  "../../img/home/headshot1.JPG",
-  "../../img/home/headshot2.JPG",
-  "../../img/home/headshot3.JPG"
+  "img/home/headshot1.JPG",
+  "img/home/headshot2.JPG",
+  "img/home/headshot3.JPG"
 ];
 
 const theater = [
@@ -69,8 +69,6 @@ const other = [
 
 let i = 1;
 let n = 0;
-let currentGallery = 0;
-let currentIndex;
 
 //Headshot
 function next(){
@@ -100,7 +98,7 @@ $(".dropdown").mouseleave(function(){
 $('.theater p').click(function(){
   const overlay = document.getElementById('hidden-theater');
   let img = document.getElementById('overlayTheaterImage');
-  img.src = theater[n];
+  img.src = "jtscreen/acting/" + theater[n];
   overlay.style.display = 'flex';
   $('#count-theater').text((n+1) + '/' + theater.length);
   overlay.removeAttribute("hidden");
@@ -110,7 +108,7 @@ $('.theater p').click(function(){
 $('.film p').click(function(){
   const overlay = document.getElementById('hidden-film');
   let img = document.getElementById('overlayFilmImage');
-  img.src = film[n];
+  img.src = "jtscreen/acting/" + film[n];
   overlay.style.display = 'flex';
   $('#count-film').text((n+1) + '/' + film.length);
   overlay.removeAttribute("hidden");
@@ -120,7 +118,7 @@ $('.film p').click(function(){
 $('.other p').click(function(){
   const overlay = document.getElementById('hidden-other');
   let img = document.getElementById('overlayOtherImage');
-  img.src = other[n];
+  img.src = "jtscreen/acting/" + other[n];
   overlay.style.display = 'flex';
   $('#count-other').text((n+1) + '/' + other.length);
   overlay.removeAttribute("hidden");
@@ -139,7 +137,7 @@ $('#prev-theater').click(function(){
   if(n <= 0){} 
   else{
     n-=1;
-    img.src = theater[n];
+    img.src = "jtscreen/acting/" + theater[n];
     $('#count-theater').text((n+1) + '/' + theater.length);
   }
 })
@@ -149,7 +147,7 @@ $('#next-theater').click(function(){
   else{
     n+=1;
     $('#count-theater').text((n+1) + '/' + theater.length);
-    img.src = theater[n];
+    img.src = "jtscreen/acting/" + theater[n];
   }
 })
 //film
@@ -158,7 +156,7 @@ $('#prev-film').click(function(){
   if(n <= 0){} 
   else{
     n-=1;
-    img.src = film[n];
+    img.src = "jtscreen/acting/" + film[n];
     $('#count-film').text((n+1) + '/' + film.length);
   }
 })
@@ -168,7 +166,7 @@ $('#next-film').click(function(){
   else{
     n+=1;
     $('#count-film').text((n+1) + '/' + film.length);
-    img.src = film[n];
+    img.src = "jtscreen/acting/" + film[n];
   }
 })
 $('#prev-other').click(function(){
@@ -176,7 +174,7 @@ $('#prev-other').click(function(){
   if(n <= 0){} 
   else{
     n-=1;
-    img.src = other[n];
+    img.src = "jtscreen/acting/" + other[n];
     $('#count-other').text((n+1) + '/' + other.length);
   }
 })
@@ -186,6 +184,6 @@ $('#next-other').click(function(){
   else{
     n+=1;
     $('#count-other').text((n+1) + '/' + other.length);
-    img.src = other[n];
+    img.src = "jtscreen/acting/" + other[n];
   }
 })

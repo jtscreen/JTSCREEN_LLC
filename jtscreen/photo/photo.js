@@ -77,7 +77,7 @@ $("#prev-headshot").click(function(){
   if(h <= 0){} 
   else{
     h-=1;
-    img.src = headshot[h];
+    img.src = "jtscreen/photo/" + headshot[h];
     $('#count-headshot').text((h+1) + '/' + headshot.length);
   }
 })
@@ -88,7 +88,7 @@ $("#next-headshot").click(function(){
   else{
     h+=1;
     $('#count-headshot').text((h+1) + '/' + headshot.length);
-    img.src = headshot[h];
+    img.src = "jtscreen/photo/" + headshot[h];
   }
 })
 
@@ -99,8 +99,8 @@ $("#hidden-prev-headshot").click(function(){
   if(h <= 0){} 
   else{
     h-=1;
-    img.src = headshot[h];
-    img2.src = headshot[h];
+    img.src = "jtscreen/photo/" + headshot[h];
+    img2.src = "jtscreen/photo/" + headshot[h];
     $('#count-headshot').text((h+1) + '/' + headshot.length);
   }
 })
@@ -111,8 +111,8 @@ $("#hidden-next-headshot").click(function(){
   if(h >= headshot.length-1){} 
   else{
     h+=1;
-    img.src = headshot[h];
-    img2.src = headshot[h];
+    img.src = "jtscreen/photo/" + headshot[h];
+    img2.src = "jtscreen/photo/" + headshot[h];
     $('#count-headshot').text((h+1) + '/' + headshot.length);
   }
 })
@@ -124,7 +124,7 @@ $("#prev-production").click(function(){
   if(p <= 0){} 
   else{
     p-=1;
-    img.src = production[p];
+    img.src = "jtscreen/photo/" + production[p];
     $('#count-production').text((p+1) + '/' + production.length);
   }
 })
@@ -135,7 +135,7 @@ $("#next-production").click(function(){
   else{
     p+=1;
     $('#count-production').text((p+1) + '/' + production.length);
-    img.src = production[p];
+    img.src = "jtscreen/photo/" + production[p];
   }
 })
 
@@ -146,8 +146,8 @@ $("#hidden-prev-production").click(function(){
   if(p <= 0){} 
   else{
     p-=1;
-    img.src = production[p];
-    img2.src = production[p];
+    img.src = "jtscreen/photo/" + production[p];
+    img2.src = "jtscreen/photo/" + production[p];
     $('#count-production').text((p+1) + '/' + production.length);
   }
 })
@@ -158,8 +158,8 @@ $("#hidden-next-production").click(function(){
   if(p >= production.length-1){} 
   else{
     p+=1;
-    img.src = production[p];
-    img2.src = production[p];
+    img.src = "jtscreen/photo/" + production[p];
+    img2.src = "jtscreen/photo/" + production[p];
     $('#count-production').text((p+1) + '/' + production.length);
   }
 })
@@ -171,7 +171,7 @@ $("#prev-grad").click(function(){
   if(g <= 0){} 
   else{
     g-=1;
-    img.src = grad[g];
+    img.src = "jtscreen/photo/" + grad[g];
     $('#count-grad').text((g+1) + '/' + grad.length);
   }
 })
@@ -182,7 +182,7 @@ $("#next-grad").click(function(){
   else{
     g+=1;
     $('#count-grad').text((g+1) + '/' + grad.length);
-    img.src = grad[g];
+    img.src = "jtscreen/photo/" + grad[g];
   }
 })
 
@@ -193,8 +193,8 @@ $("#hidden-prev-grad").click(function(){
   if(g <= 0){} 
   else{
     g-=1;
-    img.src = grad[g];
-    img2.src = grad[g];
+    img.src = "jtscreen/photo/" + grad[g];
+    img2.src = "jtscreen/photo/" + grad[g];
     $('#count-grad').text((g+1) + '/' + grad.length);
   }
 })
@@ -205,8 +205,8 @@ $("#hidden-next-grad").click(function(){
   if(g >= grad.length-1){} 
   else{
     g+=1;
-    img.src = grad[g];
-    img2.src = grad[g];
+    img.src = "jtscreen/photo/" + grad[g];
+    img2.src = "jtscreen/photo/" + grad[g];
     $('#count-grad').text((g+1) + '/' + grad.length);
   }
 })
@@ -218,7 +218,7 @@ $("#prev-portrait").click(function(){
   if(r <= 0){} 
   else{
     r-=1;
-    img.src = portrait[r];
+    img.src = "jtscreen/photo/" + portrait[r];
     $('#count-portrait').text((r+1) + '/' + portrait.length);
   }
 })
@@ -229,7 +229,7 @@ $("#next-portrait").click(function(){
   else{
     r+=1;
     $('#count-portrait').text((r+1) + '/' + portrait.length);
-    img.src = portrait[r];
+    img.src = "jtscreen/photo/" + portrait[r];
   }
 })
 
@@ -240,8 +240,8 @@ $("#hidden-prev-portrait").click(function(){
   if(r <= 0){} 
   else{
     r-=1;
-    img.src = portrait[r];
-    img2.src = portrait[r];
+    img.src = "jtscreen/photo/" + portrait[r];
+    img2.src = "jtscreen/photo/" + portrait[r];
     $('#count-portrait').text((r+1) + '/' + portrait.length);
   }
 })
@@ -252,8 +252,8 @@ $("#hidden-next-portrait").click(function(){
   if(r >= portrait.length-1){} 
   else{
     r+=1;
-    img.src = portrait[r];
-    img2.src = portrait[r];
+    img.src = "jtscreen/photo/" + portrait[r];
+    img2.src = "jtscreen/photo/" + portrait[r];
     $('#count-portrait').text((r+1) + '/' + portrait.length);
   }
 })
@@ -265,7 +265,7 @@ $("#prev-event").click(function(){
   if(e <= 0){} 
   else{
     e-=1;
-    img.src = event[e];
+    img.src = "jtscreen/photo/" + event[e];
     $('#count-event').text((e+1) + '/' + event.length);
   }
 })
@@ -276,7 +276,7 @@ $("#next-event").click(function(){
   else{
     e+=1;
     $('#count-event').text((e+1) + '/' + event.length);
-    img.src = event[e];
+    img.src = "jtscreen/photo/" + event[e];
   }
 })
 //overlayed event
@@ -286,8 +286,8 @@ $("#hidden-prev-event").click(function(){
   if(e <= 0){} 
   else{
     e-=1;
-    img.src = event[e];
-    img2.src = event[e];
+    img.src = "jtscreen/photo/" + event[e];
+    img2.src = "jtscreen/photo/" + event[e];
     $('#count-event').text((e+1) + '/' + event.length);
   }
 })
@@ -298,8 +298,8 @@ $("#hidden-next-event").click(function(){
   if(e >= event.length-1){} 
   else{
     e+=1;
-    img.src = event[e];
-    img2.src = event[e];
+    img.src = "jtscreen/photo/" + event[e];
+    img2.src = "jtscreen/photo/" + event[e];
     $('#count-event').text((e+1) + '/' + event.length);
   }
 })
@@ -308,7 +308,7 @@ $("#hidden-next-event").click(function(){
 $('#current-headshot').click(function(){
   const overlay = document.getElementById('hidden-headshot');
   let img = document.getElementById('overlayHeadshotImage');
-  img.src = headshot[h];
+  img.src = "jtscreen/photo/" + headshot[h];
   overlay.style.display = 'flex';
   $('#count-headshot').text((h+1) + '/' + headshot.length);
   overlay.removeAttribute("hidden");
@@ -317,7 +317,7 @@ $('#current-headshot').click(function(){
 $('#current-production').click(function(){
   const overlay = document.getElementById('hidden-production');
   let img = document.getElementById('overlayProductionImage');
-  img.src = production[p];
+  img.src = "jtscreen/photo/" + production[p];
   overlay.style.display = 'flex';
   $('#count-production').text((p+1) + '/' + production.length);
   overlay.removeAttribute("hidden");
@@ -326,7 +326,7 @@ $('#current-production').click(function(){
 $('#current-grad').click(function(){
   const overlay = document.getElementById('hidden-grad');
   let img = document.getElementById('overlayGradImage');
-  img.src = grad[g];
+  img.src = "jtscreen/photo/" + grad[g];
   overlay.style.display = 'flex';
   $('#count-grad').text((g+1) + '/' + grad.length);
   overlay.removeAttribute("hidden");
@@ -335,7 +335,7 @@ $('#current-grad').click(function(){
 $('#current-portrait').click(function(){
   const overlay = document.getElementById('hidden-portrait');
   let img = document.getElementById('overlayPortraitImage');
-  img.src = portrait[r];
+  img.src = "jtscreen/photo/" + portrait[r];
   overlay.style.display = 'flex';
   $('#count-portrait').text((r+1) + '/' + portrait.length);
   overlay.removeAttribute("hidden");
@@ -344,7 +344,7 @@ $('#current-portrait').click(function(){
 $('#current-event').click(function(){
   const overlay = document.getElementById('hidden-event');
   let img = document.getElementById('overlayEventImage');
-  img.src = event[e];
+  img.src = "jtscreen/photo/" + event[e];
   overlay.style.display = 'flex';
   $('#count-headshot').text((e+1) + '/' + event.length);
   overlay.removeAttribute("hidden");
