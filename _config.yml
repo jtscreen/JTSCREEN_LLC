@@ -1,11 +1,15 @@
-plugins:
-  - jekyll-seo-tag
-
-# Optional but useful metadata
-layout: default
-title: "Joshua Screen – Actor, Musician, Photographer"
-description: "Official website of Joshua Screen. Portfolio in acting, photography, music, and more."
+title: "Joshua Screen"
+description: "Official website of Joshua Screen — Actor, Music Artist, Photographer, and Creative Director."
 url: "https://www.jtscreen.com"
+
 author:
   name: "Joshua Screen"
-  email: jtscreen23@gmail.com
+  email: "jtscreen23@gmail.com"  # optional
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Needed for GitHub Pages
+markdown: kramdown
+theme: minima  # or whatever theme you're using
