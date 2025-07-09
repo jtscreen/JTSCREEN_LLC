@@ -2,9 +2,10 @@ plugins:
   - jekyll-seo-tag
 
 # Optional but useful metadata
-title: "Joshua Screen"
-description: "Actor | Music Artist | Photographer | Creator of JTSCREEN"
+layout: default
+title: "Joshua Screen – Actor, Musician, Photographer"
+description: "Official website of Joshua Screen. Portfolio in acting, photography, music, and more."
 url: "https://www.jtscreen.com"
 author:
   name: "Joshua Screen"
-  email: your@email.com
+  email: jtscreen23@gmail.com
