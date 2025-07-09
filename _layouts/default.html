@@ -1,0 +1,28 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title | default: site.title }}</title>
+
+  <!-- SEO plugin injects all needed metadata -->
+  {% seo %}
+
+  <!-- Optional: Your CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Optional: Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joshua Screen",
+    "url": "https://www.jtscreen.com",
+    "jobTitle": "Actor, Music Artist, Photographer",
+    "image": "https://www.jtscreen.com/images/joshua-screen.jpg",
+    "sameAs": [
+      "https://www.instagram.com/jtscreen",
+      "https://www.imdb.com/name/nm13843778"
+    ]
+  }
+  </script>
+</head>
